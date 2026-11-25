@@ -1,0 +1,848 @@
+<!DOCTYPE html><html lang="id" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KailSpot — Concept: Midnight Sonar (Dark Mode)</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="235c9b75cf9b7f54===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#D97707',
+        'on-accent': '#2A2A2A',
+        'accent-container': '#FFEDE3',
+        'on-accent-container': '#6E3900',
+        'success': '#0F766E',
+        'on-success': '#FFFFFF',
+        'success-container': '#CCFBF1',
+        'on-success-container': '#115E59',
+        'light-primary': '#00374E',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#0B4F6C',
+        'light-on-primary-container': '#E3F3FF',
+        'light-secondary': '#006971',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#C8FAFF',
+        'light-on-secondary-container': '#00363B',
+        'light-tertiary': '#512800',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDCC3',
+        'light-on-tertiary-container': '#4D2600',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8F9FC',
+        'light-on-background': '#191C1E',
+        'light-surface': '#F8F9FC',
+        'light-surface-dim': '#D9DADD',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F3F6',
+        'light-surface-container': '#EDEEF0',
+        'light-surface-container-high': '#E7E8EB',
+        'light-surface-container-highest': '#E1E2E5',
+        'light-on-surface': '#191C1E',
+        'light-surface-variant': '#DCE3EA',
+        'light-on-surface-variant': '#41484D',
+        'light-outline': '#71787E',
+        'light-outline-variant': '#C0C7CE',
+        'light-inverse-surface': '#2E3133',
+        'light-inverse-on-surface': '#F0F1F3',
+        'light-inverse-primary': '#97CDEF',
+        'dark-primary': '#97CDEF',
+        'dark-on-primary': '#00344A',
+        'dark-primary-container': '#0B4F6C',
+        'dark-on-primary-container': '#E3F3FF',
+        'dark-secondary': '#6FD6E0',
+        'dark-on-secondary': '#00363B',
+        'dark-secondary-container': '#004F55',
+        'dark-on-secondary-container': '#C8FAFF',
+        'dark-tertiary': '#FFB77D',
+        'dark-on-tertiary': '#4D2600',
+        'dark-tertiary-container': '#723B00',
+        'dark-on-tertiary-container': '#FFDCC3',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#111416',
+        'dark-on-background': '#E1E2E5',
+        'dark-surface': '#111416',
+        'dark-surface-dim': '#111416',
+        'dark-surface-bright': '#37393C',
+        'dark-surface-container-lowest': '#0C0F10',
+        'dark-surface-container-low': '#191C1E',
+        'dark-surface-container': '#1D2022',
+        'dark-surface-container-high': '#282A2C',
+        'dark-surface-container-highest': '#323537',
+        'dark-on-surface': '#E1E2E5',
+        'dark-surface-variant': '#41484D',
+        'dark-on-surface-variant': '#C0C7CE',
+        'dark-outline': '#8A9298',
+        'dark-outline-variant': '#41484D',
+        'dark-inverse-surface': '#E1E2E5',
+        'dark-inverse-on-surface': '#2E3133',
+        'dark-inverse-primary': '#2A6482',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Display"', 'sans-serif'],
+        'headline': ['"Red Hat Display"', 'sans-serif'],
+        'title': ['"Commissioner"', 'sans-serif'],
+        'body': ['"Commissioner"', 'sans-serif'],
+        'label': ['"Commissioner"', 'sans-serif'],
+        'mono': ['"Reddit Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-sm': ['11px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&amp;family=Red+Hat+Display:wght@600;700&amp;family=Reddit+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    .sonar-grid {
+      background-image:
+        linear-gradient(to right, rgba(111, 214, 224, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(111, 214, 224, 0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col bg-dark-surface">
+
+    <!-- Sticky Midnight Sonar Header -->
+    <header class="sticky top-0 z-40 bg-dark-surface-container-lowest/95 backdrop-blur-sm border-b border-dark-outline-variant px-gutter-lg py-gutter-sm">
+      <div class="max-w-screen-2xl mx-auto flex items-center justify-between gap-gutter-md">
+        <div class="flex items-center gap-gutter-xl">
+          <a href="#beranda" class="flex items-center gap-gutter-sm rounded-md">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-dark-primary-container text-dark-on-primary-container border border-dark-primary/40">
+              <span class="material-symbols-outlined text-headline-md" aria-hidden="true">radar</span>
+            </span>
+            <div class="flex flex-col">
+              <span data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-primary leading-none">KailSpot</span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-dark-secondary">Midnight Sonar • Peta Pemancing</span>
+            </div>
+          </a>
+
+          <nav aria-label="Navigasi halaman" class="hidden md:flex items-center gap-gutter-xs">
+            <a href="#beranda" class="px-gutter-md py-gutter-xs rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-lg">
+              <span data-design-text-token="label-lg">Beranda</span>
+            </a>
+            <a href="#fitur" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg transition-colors duration-state-change">
+              <span data-design-text-token="label-lg">Cara Kerja</span>
+            </a>
+            <a href="#peta-spot" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg transition-colors duration-state-change">
+              <span data-design-text-token="label-lg">Peta Sonar</span>
+            </a>
+            <a href="#verifikasi-admin" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg transition-colors duration-state-change">
+              <span data-design-text-token="label-lg">Verifikasi Admin</span>
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-gutter-md">
+          <button id="open-mark-modal-btn" type="button" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-sm rounded-full bg-dark-primary text-dark-on-primary font-label text-label-lg hover:opacity-90 transition-opacity duration-state-change">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">add_location_alt</span>
+            <span data-design-text-token="label-lg">Tandai Spot &amp; Tangkapan</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 flex flex-col">
+
+      <!-- BAGIAN 1: BERANDA (MIDNIGHT SONAR HERO) -->
+      <section id="beranda" class="relative overflow-hidden py-section px-gutter-lg bg-dark-surface-container-lowest sonar-grid border-b border-dark-outline-variant">
+        <!-- Ambient Deep Water Glows -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-dark-primary-container/30 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 right-0 w-96 h-96 rounded-full bg-dark-secondary-container/30 blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+          <div class="lg:col-span-6 flex flex-col gap-gutter-lg">
+            <div class="inline-flex items-center gap-gutter-sm self-start px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container border border-dark-outline-variant">
+              <span class="w-2 h-2 rounded-full bg-dark-secondary"></span>
+              <span data-design-text-token="label-md" class="font-label text-label-md text-dark-secondary">Mode Sonar Malam • Laut, Muara, Sungai &amp; Waduk</span>
+            </div>
+
+            <h1 data-design-text-token="display-lg" class="font-display text-display-lg text-dark-on-surface text-balance">
+              Navigasi Spot Mancing Akurat dalam Tampilan Sonar Gelap.
+            </h1>
+
+            <p data-design-text-token="body-lg" class="font-body text-body-lg text-dark-on-surface-variant max-w-prose text-pretty">
+              KailSpot membantu pemancing menandai titik koordinat potensial beserta hasil tangkapan. Tidak ada feed yang penuh sesak—cukup klik pin di peta untuk melihat detail spot &amp; umpan, lalu admin memverifikasi setiap laporan.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-gutter-md">
+              <a href="#peta-spot" class="inline-flex items-center gap-gutter-sm px-gutter-xl py-gutter-sm rounded-full bg-dark-secondary text-dark-on-secondary font-label text-label-lg hover:opacity-90 transition-opacity duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">explore</span>
+                <span data-design-text-token="label-lg">Jelajahi Peta Pin</span>
+              </a>
+
+              <a href="#verifikasi-admin" class="inline-flex items-center gap-gutter-sm px-gutter-lg py-gutter-sm rounded-full bg-dark-surface-container border border-dark-outline-variant text-dark-on-surface font-label text-label-lg hover:bg-dark-surface-container-high transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md text-dark-tertiary" aria-hidden="true">verified_user</span>
+                <span data-design-text-token="label-lg">Panel Verifikasi Admin</span>
+              </a>
+            </div>
+
+            <!-- Telemetry Metrics -->
+            <div class="grid grid-cols-3 gap-gutter-md pt-gutter-md border-t border-dark-outline-variant">
+              <div class="bg-dark-surface-container rounded-lg p-gutter-md border border-dark-outline-variant">
+                <span data-design-text-token="headline-md" id="hero-stat-spots" class="font-mono text-headline-md text-dark-primary tabular-nums block">5</span>
+                <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">Pin Spot Aktif</span>
+              </div>
+              <div class="bg-dark-surface-container rounded-lg p-gutter-md border border-dark-outline-variant">
+                <span data-design-text-token="headline-md" id="hero-stat-verified" class="font-mono text-headline-md text-dark-secondary tabular-nums block">3</span>
+                <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">Terverifikasi Admin</span>
+              </div>
+              <div class="bg-dark-surface-container rounded-lg p-gutter-md border border-dark-outline-variant">
+                <span data-design-text-token="headline-md" id="hero-stat-pending" class="font-mono text-headline-md text-dark-tertiary tabular-nums block">2</span>
+                <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">Antrean Verifikasi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Sonar Showcase Card -->
+          <div class="lg:col-span-6 grid grid-cols-12 gap-gutter-md">
+            <div class="col-span-12 relative rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrClblVUQ7WgontEpXkOVd9RjU1hZ_IzVGeVcZFRvN3Wc7wdWHMDZkMC_mxSMYc8a29i3Y_E0zcaYjgVTAXmFJPsbprl6qdmeXTd_jJmuECwMmSJ261dBnTb_iIcg40Xwxs5wr9u996IqNhOvYV4RccFDRyyMR3R8xlluDYd10oET3FKIXo6mkrcbU0SV2lhvDjFLEmQmkvzAglrZfvJK36Mn9jICA4PorT5N6-cLRwtEaBQmMh4yO2yPQeVSpQnMA" alt="Pemancing di dermaga laut" class="w-full h-72 object-cover opacity-90" data-stitch-original-src="0c0b5ce37a47d96b===../../images/hero_beranda_mancing.jpg">
+              <div class="p-gutter-md flex items-center justify-between gap-gutter-md bg-dark-surface-container-low border-t border-dark-outline-variant">
+                <div class="flex flex-col">
+                  <span data-design-text-token="title-md" class="font-title text-title-md text-dark-on-surface">Dermaga Muara Angke</span>
+                  <span data-design-text-token="mono-sm" class="font-mono text-mono-sm text-dark-primary">-6.1052, 106.7921 • Pasang Naik +1,4 m</span>
+                </div>
+                <span data-design-text-token="label-sm" class="px-gutter-md py-gutter-xs rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi</span>
+              </div>
+            </div>
+
+            <div class="col-span-6 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w" alt="Kakap Putih 4,2 kg" class="w-full h-36 object-cover" data-stitch-original-src="6218ae829db366e0===../../images/catch_kakap_putih.jpg">
+              <div class="p-gutter-sm flex items-center justify-between">
+                <span data-design-text-token="label-md" class="font-label text-label-md text-dark-on-surface">Kakap Putih</span>
+                <span data-design-text-token="mono-sm" class="font-mono text-mono-sm text-dark-secondary">4,2 kg</span>
+              </div>
+            </div>
+
+            <div class="col-span-6 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg" alt="Sungai Cisadane" class="w-full h-36 object-cover" data-stitch-original-src="50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg">
+              <div class="p-gutter-sm flex items-center justify-between">
+                <span data-design-text-token="label-md" class="font-label text-label-md text-dark-on-surface">Sungai Cisadane</span>
+                <span data-design-text-token="mono-sm" class="font-mono text-mono-sm text-dark-tertiary">Arus Sedang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN 2: ALUR & FITUR UTAMA -->
+      <section id="fitur" class="py-section px-gutter-lg bg-dark-surface border-b border-dark-outline-variant">
+        <div class="max-w-screen-xl mx-auto flex flex-col gap-gutter-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md">
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-dark-secondary uppercase tracking-wider">Alur Sistem</span>
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-dark-on-surface">Tiga Langkah dari Lapangan ke Peta</h2>
+            </div>
+            <p data-design-text-token="body-md" class="text-body-md text-dark-on-surface-variant max-w-md">
+              Dirancang fokus pada peta pin interaktif agar informasi spot dan tangkapan tetap rapi serta mudah dicek.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-primary-container text-dark-on-primary-container">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">add_location_alt</span>
+                </span>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-dark-primary">01</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-on-surface">Tandai Spot &amp; Tangkapan</h3>
+              <p data-design-text-token="body-md" class="text-body-md text-dark-on-surface-variant">
+                Simpan titik koordinat GPS, jenis perairan, umpan andalan, serta catatan ikan yang berhasil dinaikkan.
+              </p>
+            </article>
+
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-secondary-container text-dark-on-secondary-container">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">touch_app</span>
+                </span>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-dark-secondary">02</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-on-surface">Klik Pin, Baru Muncul Detail</h3>
+              <p data-design-text-token="body-md" class="text-body-md text-dark-on-surface-variant text-balance">
+                Tanpa feed panjang yang membingungkan. Pencet pin lokasi di peta untuk membuka info spot dan riwayat strike.
+              </p>
+            </article>
+
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-tertiary-container text-dark-on-tertiary-container">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">verified_user</span>
+                </span>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-dark-tertiary">03</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-on-surface">Kurasi &amp; Verifikasi Admin</h3>
+              <p data-design-text-token="body-md" class="text-body-md text-dark-on-surface-variant">
+                Admin memeriksa setiap titik baru sebelum memberi lencana Terverifikasi agar pemancing lain tidak salah lokasi.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN 3: PETA SONAR INTERAKTIF (KLIK PIN UNTUK DETAIL, TANPA FEED) -->
+      <section id="peta-spot" class="py-section px-gutter-lg bg-dark-surface-container-low border-b border-dark-outline-variant">
+        <div class="max-w-screen-2xl mx-auto flex flex-col gap-gutter-lg">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-gutter-md">
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-dark-secondary uppercase tracking-wider">Peta Interaktif</span>
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-dark-on-surface">Pencet Pin untuk Lihat Detail Spot &amp; Tangkapan</h2>
+            </div>
+
+            <!-- Search & Filter Bar -->
+            <div class="flex flex-wrap items-center gap-gutter-sm">
+              <div class="relative">
+                <span class="material-symbols-outlined text-title-md text-dark-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true">search</span>
+                <input id="map-search-input" type="text" placeholder="Cari nama spot atau ikan..." class="pl-10 pr-gutter-md py-gutter-xs rounded-full bg-dark-surface-container border border-dark-outline-variant text-dark-on-surface placeholder-dark-on-surface-variant text-body-md focus:border-dark-primary focus:ring-0">
+              </div>
+
+              <div id="filter-chips" class="flex flex-wrap items-center gap-gutter-xs">
+                <button type="button" data-filter="all" class="filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-md">Semua</button>
+                <button type="button" data-filter="laut" class="filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md hover:text-dark-on-surface">Laut &amp; Muara</button>
+                <button type="button" data-filter="sungai" class="filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md hover:text-dark-on-surface">Sungai</button>
+                <button type="button" data-filter="danau" class="filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md hover:text-dark-on-surface">Danau</button>
+                <button type="button" data-filter="verified" class="filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md hover:text-dark-on-surface">Terverifikasi</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Split Map + Pin Detail Drawer -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-stretch">
+            <!-- Left: Dark Bathymetry Sonar Map -->
+            <div class="lg:col-span-7 relative rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container-lowest min-h-[520px] flex flex-col justify-between">
+              <!-- Bathymetry SVG Background -->
+              <svg viewBox="0 0 800 540" preserveAspectRatio="xMidYMid slice" class="absolute inset-0 w-full h-full pointer-events-none">
+                <rect width="800" height="540" fill="#0C0F10"></rect>
+                <!-- Topographic Contours -->
+                <path d="M-20 120 Q 180 60 360 150 T 820 100" fill="none" stroke="#1E3A4C" stroke-width="1.5"></path>
+                <path d="M-20 200 Q 220 140 440 230 T 820 190" fill="none" stroke="#1E3A4C" stroke-width="1.5" stroke-dasharray="6 6"></path>
+                <path d="M-20 340 Q 260 270 500 370 T 820 310" fill="none" stroke="#0B4F6C" stroke-width="2"></path>
+                <path d="M-20 440 Q 300 390 540 460 T 820 430" fill="none" stroke="#004F55" stroke-width="2"></path>
+                <!-- River Channel -->
+                <path d="M 140 540 C 170 400, 260 340, 310 240 C 350 160, 460 120, 560 0" fill="none" stroke="#004F55" stroke-width="24" stroke-linecap="round" opacity="0.55"></path>
+                <!-- Sonar Rings -->
+                <circle cx="400" cy="270" r="110" fill="none" stroke="#6FD6E0" stroke-width="1" stroke-dasharray="4 6" opacity="0.25"></circle>
+                <circle cx="400" cy="270" r="210" fill="none" stroke="#97CDEF" stroke-width="1" stroke-dasharray="4 6" opacity="0.2"></circle>
+              </svg>
+
+              <!-- Top Map Telemetry Bar -->
+              <div class="relative z-10 m-gutter-md flex items-center justify-between gap-gutter-sm">
+                <div class="px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container/95 border border-dark-outline-variant flex items-center gap-gutter-sm">
+                  <span class="w-2.5 h-2.5 rounded-full bg-dark-secondary"></span>
+                  <span data-design-text-token="label-sm" class="font-label text-label-sm text-dark-on-surface">Pin Hijau = Terverifikasi</span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-dark-tertiary ml-gutter-sm"></span>
+                  <span data-design-text-token="label-sm" class="font-label text-label-sm text-dark-on-surface">Pin Oranye = Menunggu Admin</span>
+                </div>
+                <span data-design-text-token="mono-sm" class="hidden sm:inline-block px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container/95 border border-dark-outline-variant font-mono text-mono-sm text-dark-primary">RADAR: AKTIF</span>
+              </div>
+
+              <!-- Interactive Map Pins Layer -->
+              <div id="map-pins-layer" class="relative z-10 flex-1 w-full"></div>
+
+              <!-- Bottom Map Hint -->
+              <div class="relative z-10 m-gutter-md self-start px-gutter-md py-gutter-xs rounded-lg bg-dark-surface-container/95 border border-dark-outline-variant flex items-center gap-gutter-xs">
+                <span class="material-symbols-outlined text-body-lg text-dark-primary" aria-hidden="true">info</span>
+                <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">Klik salah satu pin di atas untuk menampilkan detail spot &amp; laporan tangkapan di panel kanan.</span>
+              </div>
+            </div>
+
+            <!-- Right: Detail Spot & Tangkapan (Muncul saat Pin Dipencet) -->
+            <aside id="pin-detail-panel" class="lg:col-span-5 rounded-xl border border-dark-outline-variant bg-dark-surface-container p-gutter-lg flex flex-col gap-gutter-md">
+              <!-- Populated dynamically by JS -->
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN 4: PANEL VERIFIKASI ADMIN -->
+      <section id="verifikasi-admin" class="py-section px-gutter-lg bg-dark-surface">
+        <div class="max-w-screen-2xl mx-auto flex flex-col gap-gutter-lg">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md">
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-md" class="font-label text-label-md text-dark-tertiary uppercase tracking-wider">Moderasi &amp; Kualitas Data</span>
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-dark-on-surface">Panel Verifikasi Admin</h2>
+            </div>
+
+            <div class="flex items-center gap-gutter-xs">
+              <button type="button" data-admin-filter="all" class="admin-tab px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-md">Semua Laporan</button>
+              <button type="button" data-admin-filter="pending" class="admin-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md">Menunggu Verifikasi</button>
+              <button type="button" data-admin-filter="verified" class="admin-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md">Terverifikasi</button>
+            </div>
+          </div>
+
+          <div id="admin-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-surface-container-lowest border-t border-dark-outline-variant py-gutter-lg px-gutter-lg">
+      <div class="max-w-screen-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-gutter-md">
+        <div class="flex items-center gap-gutter-sm">
+          <span class="material-symbols-outlined text-title-lg text-dark-primary" aria-hidden="true">phishing</span>
+          <span data-design-text-token="title-md" class="font-title text-title-md text-dark-on-surface">KailSpot</span>
+          <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">— Konsep Midnight Sonar</span>
+        </div>
+        <span data-design-text-token="body-sm" class="text-body-sm text-dark-on-surface-variant">Peta Spot &amp; Tangkapan Komunitas Pemancing Indonesia</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- MODAL: TANDAI SPOT & TANGKAPAN BARU -->
+  <div id="mark-spot-modal" class="hidden fixed inset-0 z-50 bg-dark-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center p-gutter-md">
+    <div class="w-full max-w-lg rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-lg flex flex-col gap-gutter-md shadow-2xl">
+      <div class="flex items-center justify-between">
+        <h3 data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-on-surface">Tandai Spot &amp; Laporan Tangkapan</h3>
+        <button id="close-mark-modal-btn" type="button" class="p-gutter-xs rounded-full text-dark-on-surface-variant hover:bg-dark-surface-container-high">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">close</span>
+        </button>
+      </div>
+
+      <form id="mark-spot-form" class="flex flex-col gap-gutter-md">
+        <div class="flex flex-col gap-gutter-xs">
+          <label for="input-spot-name" class="font-label text-label-md text-dark-on-surface">Nama Spot</label>
+          <input id="input-spot-name" required type="text" placeholder="Contoh: Muara Baru Dermaga Timur" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-on-surface px-gutter-md py-gutter-sm text-body-md">
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-md">
+          <div class="flex flex-col gap-gutter-xs">
+            <label for="input-water-type" class="font-label text-label-md text-dark-on-surface">Jenis Perairan</label>
+            <select id="input-water-type" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-on-surface px-gutter-md py-gutter-sm text-body-md">
+              <option value="laut">Laut &amp; Muara</option>
+              <option value="sungai">Sungai</option>
+              <option value="danau">Danau &amp; Waduk</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-gutter-xs">
+            <label for="input-coords" class="font-label text-label-md text-dark-on-surface">Koordinat GPS</label>
+            <input id="input-coords" required type="text" value="-6.1120, 106.8054" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-primary font-mono px-gutter-md py-gutter-sm text-mono-md">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-md">
+          <div class="flex flex-col gap-gutter-xs">
+            <label for="input-fish" class="font-label text-label-md text-dark-on-surface">Ikan Tangkapan</label>
+            <input id="input-fish" required type="text" placeholder="Contoh: Barramundi" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-on-surface px-gutter-md py-gutter-sm text-body-md">
+          </div>
+          <div class="flex flex-col gap-gutter-xs">
+            <label for="input-weight" class="font-label text-label-md text-dark-on-surface">Berat (kg)</label>
+            <input id="input-weight" required type="text" placeholder="Contoh: 3,4 kg" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-on-surface px-gutter-md py-gutter-sm text-body-md">
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-gutter-xs">
+          <label for="input-bait" class="font-label text-label-md text-dark-on-surface">Umpan &amp; Kondisi Air</label>
+          <input id="input-bait" required type="text" placeholder="Contoh: Udang hidup • Air agak keruh" class="rounded-lg bg-dark-surface-container-lowest border border-dark-outline-variant text-dark-on-surface px-gutter-md py-gutter-sm text-body-md">
+        </div>
+
+        <div class="flex items-center justify-end gap-gutter-sm pt-gutter-sm">
+          <button type="button" id="cancel-mark-modal-btn" class="px-gutter-lg py-gutter-sm rounded-full bg-dark-surface-container-high text-dark-on-surface font-label text-label-lg">Batal</button>
+          <button type="submit" class="px-gutter-lg py-gutter-sm rounded-full bg-dark-primary text-dark-on-primary font-label text-label-lg">Kirim ke Peta &amp; Admin</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script data-stitch-original-script="e86908796f1e588d===../../images/spot_muara_angke.jpg|||6218ae829db366e0===../../images/catch_kakap_putih.jpg|||50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg|||d4945de0145de5fd===../../images/spot_danau_jatiluhur.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg|||e86908796f1e588d===../../images/spot_muara_angke.jpg|||6218ae829db366e0===../../images/catch_kakap_putih.jpg|||50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg|||50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg|||d4945de0145de5fd===../../images/spot_danau_jatiluhur.jpg|||e86908796f1e588d===../../images/spot_muara_angke.jpg|||6218ae829db366e0===../../images/catch_kakap_putih.jpg">
+    const spotsData = [
+      {
+        id: 1,
+        name: "Dermaga Muara Angke",
+        category: "laut",
+        categoryLabel: "Laut & Muara",
+        coords: "-6.1052, 106.7921",
+        status: "verified",
+        waterCondition: "Pasang Naik +1,4 m • Air Hijau Kebiruan",
+        bestBait: "Udang putih hidup & minnow 9cm",
+        spotImage: "https://lh3.googleusercontent.com/aida/ALJJyrDaAtz6Id_sNgWiJCdIOGg0ZWCdZGUIzTXRxSoq_mxkhmf8yYGGpB8J3SxZ8KUM9aD4bko_fAGdoSkjVOO1sDZYWcbIb-Tmgp7zeMN-8IGT9x-IqYoO8-na-thaObS98AWLuVyweCVqwHg0jQUZnOIa3xatJtj9S9HrRxa1IFZ1bmJINmsQCotuifUXlrgi34Ihx1yDbwrLd8WYTdFGRYQO7LtrG2U6-Yn57AIdPn_c_YWweKrIqtVhwEk4",
+        x: 24,
+        y: 34,
+        catches: [
+          { fish: "Kakap Putih", weight: "4,2 kg", angler: "Rizal P.", time: "2 jam lalu", img: "https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w" }
+        ]
+      },
+      {
+        id: 2,
+        name: "Lubuk Sungai Cisadane",
+        category: "sungai",
+        categoryLabel: "Sungai",
+        coords: "-6.1784, 106.6312",
+        status: "verified",
+        waterCondition: "Arus Sedang • Kedalaman 3,5 m",
+        bestBait: "Kucur fermentasi & cacing kalung",
+        spotImage: "https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg",
+        x: 48,
+        y: 56,
+        catches: [
+          { fish: "Ikan Baung", weight: "2,6 kg", angler: "Hendra W.", time: "Hari ini, 06:15", img: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ" }
+        ]
+      },
+      {
+        id: 3,
+        name: "Tanjung Waduk Jatiluhur",
+        category: "danau",
+        categoryLabel: "Danau & Waduk",
+        coords: "-6.5256, 107.3861",
+        status: "verified",
+        waterCondition: "Tenang • Permukaan Jernih",
+        bestBait: "Pelet bom & soft lure",
+        spotImage: "https://lh3.googleusercontent.com/aida/ALJJyrAGZ0qW14ZkdN1xaC7CVV0jVY07_vA_3Mz1oCHjiHcHEyIHeQ1aLfwovMc-MgUkVHLEXxp2SZ_WZG8dVPmfhjTuQC9TS_WBIRFmX5hBmEST5Mv1kWuQbRTde0wkgIT3Rq4wrAvqXHqrSnlLP3pgzsUvDYMr7x48QOIt3jWRtQaWb371wGDdPO7Qvm9RWTJscM6LfPKGmFiAg5PQ0vBksclCvkSXvxt77EXEhMrfA2fSkPDaz4OB2rC3NU9affpcyg",
+        x: 72,
+        y: 30,
+        catches: [
+          { fish: "Hampala", weight: "1,9 kg", angler: "Dimas A.", time: "Kemarin, 16:40", img: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ" }
+        ]
+      },
+      {
+        id: 4,
+        name: "Pintu Air Bagan Siapi",
+        category: "laut",
+        categoryLabel: "Laut & Muara",
+        coords: "-6.0914, 106.8422",
+        status: "pending",
+        waterCondition: "Surut Perlahan • Angin 8 knot",
+        bestBait: "Belanak hidup",
+        spotImage: "https://lh3.googleusercontent.com/aida/ALJJyrDaAtz6Id_sNgWiJCdIOGg0ZWCdZGUIzTXRxSoq_mxkhmf8yYGGpB8J3SxZ8KUM9aD4bko_fAGdoSkjVOO1sDZYWcbIb-Tmgp7zeMN-8IGT9x-IqYoO8-na-thaObS98AWLuVyweCVqwHg0jQUZnOIa3xatJtj9S9HrRxa1IFZ1bmJINmsQCotuifUXlrgi34Ihx1yDbwrLd8WYTdFGRYQO7LtrG2U6-Yn57AIdPn_c_YWweKrIqtVhwEk4",
+        x: 62,
+        y: 72,
+        catches: [
+          { fish: "Kerapu Lumpur", weight: "3,1 kg", angler: "Bagas S.", time: "35 menit lalu", img: "https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w" }
+        ]
+      },
+      {
+        id: 5,
+        name: "Tikungan Kali Bekasi",
+        category: "sungai",
+        categoryLabel: "Sungai",
+        coords: "-6.2383, 106.9924",
+        status: "pending",
+        waterCondition: "Arus Pelan • Teduh",
+        bestBait: "Roti tawar & lumut",
+        spotImage: "https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg",
+        x: 34,
+        y: 76,
+        catches: [
+          { fish: "Patin Sungai", weight: "3,8 kg", angler: "Yusuf K.", time: "1 jam lalu", img: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ" }
+        ]
+      }
+    ];
+
+    let selectedSpotId = 1;
+    let currentMapFilter = "all";
+    let currentSearch = "";
+    let currentAdminFilter = "all";
+
+    function updateHeroCounters() {
+      const total = spotsData.length;
+      const verified = spotsData.filter(s => s.status === "verified").length;
+      const pending = spotsData.filter(s => s.status === "pending").length;
+      document.getElementById("hero-stat-spots").textContent = total;
+      document.getElementById("hero-stat-verified").textContent = verified;
+      document.getElementById("hero-stat-pending").textContent = pending;
+    }
+
+    function renderMapPins() {
+      const layer = document.getElementById("map-pins-layer");
+      const filtered = spotsData.filter(s => {
+        const matchesCat =
+          currentMapFilter === "all" ? true :
+          currentMapFilter === "verified" ? s.status === "verified" :
+          s.category === currentMapFilter;
+        const q = currentSearch.toLowerCase();
+        const matchesSearch = !q || s.name.toLowerCase().includes(q) || s.catches.some(c => c.fish.toLowerCase().includes(q));
+        return matchesCat && matchesSearch;
+      });
+
+      layer.innerHTML = filtered.map(spot => {
+        const isSelected = spot.id === selectedSpotId;
+        const isVerified = spot.status === "verified";
+        const pinBg = isVerified ? "bg-dark-secondary text-dark-on-secondary" : "bg-dark-tertiary text-dark-on-tertiary";
+        const ringClass = isSelected ? "ring-4 ring-dark-primary scale-110" : "hover:scale-105";
+        return `
+          <button
+            type="button"
+            onclick="selectSpot(${spot.id})"
+            style="left: ${spot.x}%; top: ${spot.y}%;"
+            class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-1 transition-transform duration-state-change group"
+          >
+            <span class="px-gutter-sm py-0.5 rounded-full bg-dark-surface-container-lowest/95 border border-dark-outline-variant text-label-sm font-label text-dark-on-surface whitespace-nowrap shadow-md">
+              ${spot.name}
+            </span>
+            <span class="w-9 h-9 rounded-full ${pinBg} ${ringClass} flex items-center justify-center shadow-lg">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">${isVerified ? "verified" : "schedule"}</span>
+            </span>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function renderPinDetail() {
+      const panel = document.getElementById("pin-detail-panel");
+      const spot = spotsData.find(s => s.id === selectedSpotId) || spotsData[0];
+      if (!spot) return;
+
+      const statusBadge = spot.status === "verified"
+        ? `<span class="px-gutter-md py-gutter-xs rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi Admin</span>`
+        : `<span class="px-gutter-md py-gutter-xs rounded-full bg-dark-tertiary-container text-dark-on-tertiary-container font-label text-label-sm">Menunggu Verifikasi</span>`;
+
+      const catchesHtml = spot.catches.map(c => `
+        <div class="flex items-center gap-gutter-md p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+          <img src="${c.img}" alt="${c.fish}" class="w-16 h-16 rounded-md object-cover shrink-0" />
+          <div class="flex-1 min-w-0 flex flex-col">
+            <div class="flex items-center justify-between gap-gutter-xs">
+              <span class="font-title text-title-md text-dark-on-surface">${c.fish}</span>
+              <span class="font-mono text-mono-md text-dark-secondary">${c.weight}</span>
+            </div>
+            <span class="text-body-sm text-dark-on-surface-variant">Pemancing: ${c.angler} • ${c.time}</span>
+          </div>
+        </div>
+      `).join("");
+
+      panel.innerHTML = `
+        <div class="flex items-start justify-between gap-gutter-sm">
+          <div class="flex flex-col">
+            <span class="font-label text-label-sm text-dark-primary uppercase">${spot.categoryLabel}</span>
+            <h3 class="font-headline text-headline-md text-dark-on-surface">${spot.name}</h3>
+            <span class="font-mono text-mono-sm text-dark-on-surface-variant">${spot.coords}</span>
+          </div>
+          ${statusBadge}
+        </div>
+
+        <img src="${spot.spotImage}" alt="${spot.name}" class="w-full h-44 rounded-lg object-cover border border-dark-outline-variant" />
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-sm">
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Kondisi Perairan</span>
+            <span class="text-body-sm text-dark-on-surface">${spot.waterCondition}</span>
+          </div>
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Umpan Andalan</span>
+            <span class="text-body-sm text-dark-on-surface">${spot.bestBait}</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-gutter-sm">
+          <span class="font-label text-label-md text-dark-on-surface">Hasil Tangkapan di Pin Ini (${spot.catches.length})</span>
+          ${catchesHtml}
+        </div>
+      `;
+    }
+
+    function renderAdminList() {
+      const container = document.getElementById("admin-list");
+      const list = spotsData.filter(s => currentAdminFilter === "all" ? true : s.status === currentAdminFilter);
+
+      container.innerHTML = list.map(spot => {
+        const isVerified = spot.status === "verified";
+        const badge = isVerified
+          ? `<span class="px-gutter-sm py-0.5 rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi</span>`
+          : `<span class="px-gutter-sm py-0.5 rounded-full bg-dark-tertiary-container text-dark-on-tertiary-container font-label text-label-sm">Menunggu</span>`;
+
+        const latestCatch = spot.catches[0];
+        return `
+          <article class="rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-md flex flex-col justify-between gap-gutter-md">
+            <div class="flex flex-col gap-gutter-xs">
+              <div class="flex items-center justify-between gap-gutter-sm">
+                <span class="font-mono text-mono-sm text-dark-primary">${spot.coords}</span>
+                ${badge}
+              </div>
+              <h3 class="font-headline text-title-lg text-dark-on-surface">${spot.name}</h3>
+              <p class="text-body-sm text-dark-on-surface-variant">${spot.categoryLabel} • Tangkapan: ${latestCatch ? latestCatch.fish + " (" + latestCatch.weight + ")" : "-"}</p>
+            </div>
+
+            <div class="flex items-center gap-gutter-sm pt-gutter-sm border-t border-dark-outline-variant">
+              ${!isVerified ? `
+                <button type="button" onclick="verifySpot(${spot.id})" class="flex-1 py-gutter-xs px-gutter-md rounded-full bg-dark-secondary text-dark-on-secondary font-label text-label-md">Verifikasi Spot</button>
+                <button type="button" onclick="rejectSpot(${spot.id})" class="py-gutter-xs px-gutter-md rounded-full bg-dark-error-container text-dark-on-error-container font-label text-label-md">Tolak</button>
+              ` : `
+                <button type="button" onclick="selectSpot(${spot.id}); document.getElementById('peta-spot').scrollIntoView({behavior:'smooth'});" class="flex-1 py-gutter-xs px-gutter-md rounded-full bg-dark-surface-container-high text-dark-on-surface font-label text-label-md">Lihat di Peta</button>
+              `}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function selectSpot(id) {
+      selectedSpotId = id;
+      renderMapPins();
+      renderPinDetail();
+    }
+
+    function verifySpot(id) {
+      const spot = spotsData.find(s => s.id === id);
+      if (spot) {
+        spot.status = "verified";
+        updateHeroCounters();
+        renderMapPins();
+        renderPinDetail();
+        renderAdminList();
+      }
+    }
+
+    function rejectSpot(id) {
+      const idx = spotsData.findIndex(s => s.id === id);
+      if (idx !== -1) {
+        spotsData.splice(idx, 1);
+        if (selectedSpotId === id && spotsData.length > 0) selectedSpotId = spotsData[0].id;
+        updateHeroCounters();
+        renderMapPins();
+        renderPinDetail();
+        renderAdminList();
+      }
+    }
+
+    // Filters
+    document.querySelectorAll(".filter-chip").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentMapFilter = btn.dataset.filter;
+        document.querySelectorAll(".filter-chip").forEach(b => {
+          b.className = "filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md hover:text-dark-on-surface";
+        });
+        btn.className = "filter-chip px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-md";
+        renderMapPins();
+      });
+    });
+
+    document.getElementById("map-search-input").addEventListener("input", e => {
+      currentSearch = e.target.value;
+      renderMapPins();
+    });
+
+    document.querySelectorAll(".admin-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentAdminFilter = btn.dataset.adminFilter;
+        document.querySelectorAll(".admin-tab").forEach(b => {
+          b.className = "admin-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container text-dark-on-surface-variant border border-dark-outline-variant font-label text-label-md";
+        });
+        btn.className = "admin-tab px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-md";
+        renderAdminList();
+      });
+    });
+
+    // Modal handlers
+    const modal = document.getElementById("mark-spot-modal");
+    document.getElementById("open-mark-modal-btn").addEventListener("click", () => modal.classList.remove("hidden"));
+    document.getElementById("close-mark-modal-btn").addEventListener("click", () => modal.classList.add("hidden"));
+    document.getElementById("cancel-mark-modal-btn").addEventListener("click", () => modal.classList.add("hidden"));
+
+    document.getElementById("mark-spot-form").addEventListener("submit", e => {
+      e.preventDefault();
+      const cat = document.getElementById("input-water-type").value;
+      const catLabels = { laut: "Laut & Muara", sungai: "Sungai", danau: "Danau & Waduk" };
+      const newSpot = {
+        id: Date.now(),
+        name: document.getElementById("input-spot-name").value,
+        category: cat,
+        categoryLabel: catLabels[cat],
+        coords: document.getElementById("input-coords").value,
+        status: "pending",
+        waterCondition: document.getElementById("input-bait").value,
+        bestBait: document.getElementById("input-bait").value,
+        spotImage: cat === "sungai" ? "https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg" : cat === "danau" ? "https://lh3.googleusercontent.com/aida/ALJJyrAGZ0qW14ZkdN1xaC7CVV0jVY07_vA_3Mz1oCHjiHcHEyIHeQ1aLfwovMc-MgUkVHLEXxp2SZ_WZG8dVPmfhjTuQC9TS_WBIRFmX5hBmEST5Mv1kWuQbRTde0wkgIT3Rq4wrAvqXHqrSnlLP3pgzsUvDYMr7x48QOIt3jWRtQaWb371wGDdPO7Qvm9RWTJscM6LfPKGmFiAg5PQ0vBksclCvkSXvxt77EXEhMrfA2fSkPDaz4OB2rC3NU9affpcyg" : "https://lh3.googleusercontent.com/aida/ALJJyrDaAtz6Id_sNgWiJCdIOGg0ZWCdZGUIzTXRxSoq_mxkhmf8yYGGpB8J3SxZ8KUM9aD4bko_fAGdoSkjVOO1sDZYWcbIb-Tmgp7zeMN-8IGT9x-IqYoO8-na-thaObS98AWLuVyweCVqwHg0jQUZnOIa3xatJtj9S9HrRxa1IFZ1bmJINmsQCotuifUXlrgi34Ihx1yDbwrLd8WYTdFGRYQO7LtrG2U6-Yn57AIdPn_c_YWweKrIqtVhwEk4",
+        x: 42 + Math.floor(Math.random() * 25),
+        y: 32 + Math.floor(Math.random() * 35),
+        catches: [
+          {
+            fish: document.getElementById("input-fish").value,
+            weight: document.getElementById("input-weight").value,
+            angler: "Anda",
+            time: "Baru saja",
+            img: "https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w"
+          }
+        ]
+      };
+      spotsData.unshift(newSpot);
+      selectedSpotId = newSpot.id;
+      updateHeroCounters();
+      renderMapPins();
+      renderPinDetail();
+      renderAdminList();
+      modal.classList.add("hidden");
+      e.target.reset();
+    });
+
+    updateHeroCounters();
+    renderMapPins();
+    renderPinDetail();
+    renderAdminList();
+  </script>
+
+
+</body></html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="id" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page — KailSpot (Midnight Sonar)</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="235c9b75cf9b7f54===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#D97707',
+        'on-accent': '#2A2A2A',
+        'accent-container': '#FFEDE3',
+        'on-accent-container': '#6E3900',
+        'success': '#0F766E',
+        'on-success': '#FFFFFF',
+        'success-container': '#CCFBF1',
+        'on-success-container': '#115E59',
+        'light-primary': '#00374E',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#0B4F6C',
+        'light-on-primary-container': '#E3F3FF',
+        'light-secondary': '#006971',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#C8FAFF',
+        'light-on-secondary-container': '#00363B',
+        'light-tertiary': '#512800',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDCC3',
+        'light-on-tertiary-container': '#4D2600',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8F9FC',
+        'light-on-background': '#191C1E',
+        'light-surface': '#F8F9FC',
+        'light-surface-dim': '#D9DADD',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F3F6',
+        'light-surface-container': '#EDEEF0',
+        'light-surface-container-high': '#E7E8EB',
+        'light-surface-container-highest': '#E1E2E5',
+        'light-on-surface': '#191C1E',
+        'light-surface-variant': '#DCE3EA',
+        'light-on-surface-variant': '#41484D',
+        'light-outline': '#71787E',
+        'light-outline-variant': '#C0C7CE',
+        'light-inverse-surface': '#2E3133',
+        'light-inverse-on-surface': '#F0F1F3',
+        'light-inverse-primary': '#97CDEF',
+        'dark-primary': '#97CDEF',
+        'dark-on-primary': '#00344A',
+        'dark-primary-container': '#0B4F6C',
+        'dark-on-primary-container': '#E3F3FF',
+        'dark-secondary': '#6FD6E0',
+        'dark-on-secondary': '#00363B',
+        'dark-secondary-container': '#004F55',
+        'dark-on-secondary-container': '#C8FAFF',
+        'dark-tertiary': '#FFB77D',
+        'dark-on-tertiary': '#4D2600',
+        'dark-tertiary-container': '#723B00',
+        'dark-on-tertiary-container': '#FFDCC3',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#111416',
+        'dark-on-background': '#E1E2E5',
+        'dark-surface': '#111416',
+        'dark-surface-dim': '#111416',
+        'dark-surface-bright': '#37393C',
+        'dark-surface-container-lowest': '#0C0F10',
+        'dark-surface-container-low': '#191C1E',
+        'dark-surface-container': '#1D2022',
+        'dark-surface-container-high': '#282A2C',
+        'dark-surface-container-highest': '#323537',
+        'dark-on-surface': '#E1E2E5',
+        'dark-surface-variant': '#41484D',
+        'dark-on-surface-variant': '#C0C7CE',
+        'dark-outline': '#8A9298',
+        'dark-outline-variant': '#41484D',
+        'dark-inverse-surface': '#E1E2E5',
+        'dark-inverse-on-surface': '#2E3133',
+        'dark-inverse-primary': '#2A6482',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Display"', 'sans-serif'],
+        'headline': ['"Red Hat Display"', 'sans-serif'],
+        'title': ['"Commissioner"', 'sans-serif'],
+        'body': ['"Commissioner"', 'sans-serif'],
+        'label': ['"Commissioner"', 'sans-serif'],
+        'mono': ['"Reddit Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-sm': ['11px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&amp;family=Red+Hat+Display:wght@600;700&amp;family=Reddit+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    .sonar-grid {
+      background-image:
+        linear-gradient(to right, rgba(111, 214, 224, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(111, 214, 224, 0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col bg-dark-surface">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-dark-surface-container-lowest/95 backdrop-blur-sm border-b border-dark-outline-variant px-gutter-lg py-gutter-sm">
+      <div class="max-w-screen-2xl mx-auto flex items-center justify-between gap-gutter-md">
+        <a href="#hero" class="flex items-center gap-gutter-sm rounded-md">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-dark-primary-container text-dark-on-primary-container border border-dark-primary/40">
+            <span class="material-symbols-outlined text-headline-md" aria-hidden="true">radar</span>
+          </span>
+          <div class="flex flex-col">
+            <span data-design-text-token="title-lg" class="font-headline text-title-lg text-dark-primary leading-none">KailSpot</span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-dark-secondary">Peta Pemancing Nusantara</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navigasi Landing" class="hidden md:flex items-center gap-gutter-xs">
+          <a href="#tentang" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg">Tentang</a>
+          <a href="#cara-kerja" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg">Cara Kerja</a>
+          <a href="../map-dark/PetaPinMidnight.html" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg">Peta Pin</a>
+          <a href="../admin-dark/AdminMidnight.html" class="px-gutter-md py-gutter-xs rounded-full text-dark-on-surface-variant hover:text-dark-on-surface hover:bg-dark-surface-container-high font-label text-label-lg">Admin</a>
+        </nav>
+
+        <div class="flex items-center gap-gutter-sm">
+          <a href="../login-dark/LoginMidnight.html" class="px-gutter-lg py-gutter-xs rounded-full bg-dark-surface-container border border-dark-outline-variant text-dark-on-surface font-label text-label-lg hover:bg-dark-surface-container-high">Masuk</a>
+          <a href="../map-dark/PetaPinMidnight.html" class="px-gutter-lg py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-lg hover:opacity-90">Buka Peta</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 flex flex-col">
+
+      <!-- Hero Landing -->
+      <section id="hero" class="relative overflow-hidden py-section px-gutter-lg bg-dark-surface-container-lowest sonar-grid border-b border-dark-outline-variant">
+        <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-dark-primary-container/30 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 right-0 w-96 h-96 rounded-full bg-dark-secondary-container/30 blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+          <div class="lg:col-span-6 flex flex-col gap-gutter-lg">
+            <div class="inline-flex items-center gap-gutter-sm self-start px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container border border-dark-outline-variant">
+              <span class="w-2 h-2 rounded-full bg-dark-secondary"></span>
+              <span data-design-text-token="label-md" class="font-label text-label-md text-dark-secondary">Komunitas Pemancing • Laut, Muara, Sungai &amp; Waduk</span>
+            </div>
+
+            <h1 data-design-text-token="display-lg" class="font-display text-display-lg text-dark-on-surface text-balance">
+              Temukan Spot Mancing Terbaik, Catat Strike Langsung di Peta.
+            </h1>
+
+            <p data-design-text-token="body-lg" class="font-body text-body-lg text-dark-on-surface-variant max-w-prose text-pretty">
+              KailSpot menghubungkan pemancing di seluruh Indonesia lewat peta sonar interaktif. Tandai koordinat rahasia, simpan laporan ikan &amp; umpan pada pin lokasi, dan nikmati data yang sudah diverifikasi admin.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-gutter-md">
+              <a href="../map-dark/PetaPinMidnight.html" class="inline-flex items-center gap-gutter-sm px-gutter-xl py-gutter-sm rounded-full bg-dark-secondary text-dark-on-secondary font-label text-label-lg hover:opacity-90">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">explore</span>
+                <span>Mulai Jelajah &amp; Tambah Pin</span>
+              </a>
+              <a href="../login-dark/LoginMidnight.html" class="inline-flex items-center gap-gutter-sm px-gutter-lg py-gutter-sm rounded-full bg-dark-surface-container border border-dark-outline-variant text-dark-on-surface font-label text-label-lg hover:bg-dark-surface-container-high">
+                <span class="material-symbols-outlined text-title-md text-dark-primary" aria-hidden="true">login</span>
+                <span>Masuk / Daftar Pemancing</span>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-gutter-md pt-gutter-md border-t border-dark-outline-variant">
+              <div>
+                <span class="font-mono text-headline-md text-dark-primary block">1.240+</span>
+                <span class="text-body-sm text-dark-on-surface-variant">Spot Terpetakan</span>
+              </div>
+              <div>
+                <span class="font-mono text-headline-md text-dark-secondary block">94%</span>
+                <span class="text-body-sm text-dark-on-surface-variant">Terverifikasi Admin</span>
+              </div>
+              <div>
+                <span class="font-mono text-headline-md text-dark-tertiary block">4.800+</span>
+                <span class="text-body-sm text-dark-on-surface-variant">Catatan Tangkapan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-12 gap-gutter-md">
+            <div class="col-span-12 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrClblVUQ7WgontEpXkOVd9RjU1hZ_IzVGeVcZFRvN3Wc7wdWHMDZkMC_mxSMYc8a29i3Y_E0zcaYjgVTAXmFJPsbprl6qdmeXTd_jJmuECwMmSJ261dBnTb_iIcg40Xwxs5wr9u996IqNhOvYV4RccFDRyyMR3R8xlluDYd10oET3FKIXo6mkrcbU0SV2lhvDjFLEmQmkvzAglrZfvJK36Mn9jICA4PorT5N6-cLRwtEaBQmMh4yO2yPQeVSpQnMA" alt="Pemancing di dermaga laut" class="w-full h-72 object-cover" data-stitch-original-src="0c0b5ce37a47d96b===../../images/hero_beranda_mancing.jpg">
+              <div class="p-gutter-md flex items-center justify-between gap-gutter-md bg-dark-surface-container-low border-t border-dark-outline-variant">
+                <div>
+                  <span class="font-title text-title-md text-dark-on-surface block">Dermaga Muara Angke</span>
+                  <span class="font-mono text-mono-sm text-dark-primary">-6.1052, 106.7921 • Pasang Naik +1,4 m</span>
+                </div>
+                <span class="px-gutter-md py-gutter-xs rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi</span>
+              </div>
+            </div>
+            <div class="col-span-6 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w" alt="Kakap Putih" class="w-full h-36 object-cover" data-stitch-original-src="6218ae829db366e0===../../images/catch_kakap_putih.jpg">
+              <div class="p-gutter-sm flex items-center justify-between">
+                <span class="font-label text-label-md text-dark-on-surface">Kakap Putih</span>
+                <span class="font-mono text-mono-sm text-dark-secondary">4,2 kg</span>
+              </div>
+            </div>
+            <div class="col-span-6 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAGZ0qW14ZkdN1xaC7CVV0jVY07_vA_3Mz1oCHjiHcHEyIHeQ1aLfwovMc-MgUkVHLEXxp2SZ_WZG8dVPmfhjTuQC9TS_WBIRFmX5hBmEST5Mv1kWuQbRTde0wkgIT3Rq4wrAvqXHqrSnlLP3pgzsUvDYMr7x48QOIt3jWRtQaWb371wGDdPO7Qvm9RWTJscM6LfPKGmFiAg5PQ0vBksclCvkSXvxt77EXEhMrfA2fSkPDaz4OB2rC3NU9affpcyg" alt="Waduk Jatiluhur" class="w-full h-36 object-cover" data-stitch-original-src="d4945de0145de5fd===../../images/spot_danau_jatiluhur.jpg">
+              <div class="p-gutter-sm flex items-center justify-between">
+                <span class="font-label text-label-md text-dark-on-surface">Waduk Jatiluhur</span>
+                <span class="font-mono text-mono-sm text-dark-primary">Tenang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tentang & Keunggulan -->
+      <section id="tentang" class="py-section px-gutter-lg bg-dark-surface border-b border-dark-outline-variant">
+        <div class="max-w-screen-xl mx-auto flex flex-col gap-gutter-xl">
+          <div class="text-center max-w-2xl mx-auto flex flex-col gap-gutter-sm">
+            <span class="font-label text-label-md text-dark-secondary uppercase tracking-wider">Kenapa KailSpot?</span>
+            <h2 class="font-headline text-headline-lg text-dark-on-surface text-balance">Dirancang Khusus untuk Pemancing yang Butuh Info Cepat</h2>
+            <p class="text-body-md text-dark-on-surface-variant text-balance">Tidak perlu menggulir feed panjang. Semua detail kondisi air, umpan jitu, dan foto tangkapan tersimpan rapi di balik setiap pin peta.</p>
+          </div>
+
+          <div id="cara-kerja" class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-primary-container text-dark-on-primary-container">
+                <span class="material-symbols-outlined text-headline-md" aria-hidden="true">add_location_alt</span>
+              </span>
+              <h3 class="font-headline text-title-lg text-dark-on-surface">1. Tandai Spot &amp; Tangkapan</h3>
+              <p class="text-body-md text-dark-on-surface-variant text-balance">Simpan koordinat GPS, jenis perairan, dan ikan yang berhasil dinaikkan hanya dalam satu form.</p>
+            </article>
+
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-secondary-container text-dark-on-secondary-container">
+                <span class="material-symbols-outlined text-headline-md" aria-hidden="true">touch_app</span>
+              </span>
+              <h3 class="font-headline text-title-lg text-dark-on-surface">2. Pencet Pin untuk Detail</h3>
+              <p class="text-body-md text-dark-on-surface-variant text-balance">Klik pin di peta sonar untuk langsung melihat kondisi arus, pasang surut, serta riwayat strike.</p>
+            </article>
+
+            <article class="bg-dark-surface-container rounded-xl p-gutter-lg border border-dark-outline-variant flex flex-col gap-gutter-md">
+              <span class="inline-flex items-center justify-center w-11 h-11 rounded-lg bg-dark-tertiary-container text-dark-on-tertiary-container">
+                <span class="material-symbols-outlined text-headline-md" aria-hidden="true">verified_user</span>
+              </span>
+              <h3 class="font-headline text-title-lg text-dark-on-surface">3. Verifikasi Admin</h3>
+              <p class="text-body-md text-dark-on-surface-variant text-balance">Admin meninjau setiap titik baru sebelum memberi lencana Terverifikasi agar informasi tetap akurat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pratinjau Peta Pin Interaktif -->
+      <section id="preview-peta" class="py-section px-gutter-lg bg-dark-surface-container-low">
+        <div class="max-w-screen-xl mx-auto rounded-xl border border-dark-outline-variant bg-dark-surface-container p-gutter-xl flex flex-col lg:flex-row items-center justify-between gap-gutter-xl">
+          <div class="flex flex-col gap-gutter-md max-w-xl">
+            <span class="font-label text-label-md text-dark-primary uppercase">Siap Berangkat Mancing?</span>
+            <h2 class="font-headline text-headline-lg text-dark-on-surface text-balance">Masuk untuk Menandai Spot Favoritmu Sekarang</h2>
+            <p class="text-body-md text-dark-on-surface-variant text-balance">Bagikan titik mancing terbaikmu atau akses panel admin untuk memverifikasi laporan komunitas.</p>
+            <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-xs">
+              <a href="../login-dark/LoginMidnight.html" class="px-gutter-xl py-gutter-sm rounded-full bg-dark-primary text-dark-on-primary font-label text-label-lg">Masuk ke Akun</a>
+              <a href="../admin-dark/AdminMidnight.html" class="px-gutter-lg py-gutter-sm rounded-full bg-dark-surface-container-high border border-dark-outline-variant text-dark-on-surface font-label text-label-lg">Buka Panel Admin</a>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-96 rounded-xl overflow-hidden border border-dark-outline-variant bg-dark-surface-container-lowest p-gutter-md flex flex-col gap-gutter-sm">
+            <div class="flex items-center justify-between">
+              <span class="font-label text-label-md text-dark-secondary">Pin Terakhir Diverifikasi</span>
+              <span class="font-mono text-mono-sm text-dark-primary">-6.1784, 106.6312</span>
+            </div>
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ" alt="Ikan Baung Sungai" class="w-full h-36 rounded-lg object-cover" data-stitch-original-src="8ff80004009d7b60===../../images/catch_baung_sungai.jpg">
+            <div class="flex items-center justify-between">
+              <span class="font-title text-title-md text-dark-on-surface">Lubuk Sungai Cisadane</span>
+              <span class="font-mono text-mono-md text-dark-secondary">Baung • 2,6 kg</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark-surface-container-lowest border-t border-dark-outline-variant py-gutter-lg px-gutter-lg">
+      <div class="max-w-screen-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-gutter-md">
+        <span class="font-title text-title-md text-dark-on-surface">KailSpot — Midnight Sonar</span>
+        <span class="text-body-sm text-dark-on-surface-variant">Peta Spot &amp; Tangkapan Komunitas Pemancing Indonesia</span>
+      </div>
+    </footer>
+  </div>
+
+
+</body></html>

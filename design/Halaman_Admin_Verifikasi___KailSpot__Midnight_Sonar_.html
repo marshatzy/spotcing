@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="id" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Admin Verifikasi — KailSpot (Midnight Sonar)</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="235c9b75cf9b7f54===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'accent': '#D97707',
+        'on-accent': '#2A2A2A',
+        'accent-container': '#FFEDE3',
+        'on-accent-container': '#6E3900',
+        'success': '#0F766E',
+        'on-success': '#FFFFFF',
+        'success-container': '#CCFBF1',
+        'on-success-container': '#115E59',
+        'light-primary': '#00374E',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#0B4F6C',
+        'light-on-primary-container': '#E3F3FF',
+        'light-secondary': '#006971',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#C8FAFF',
+        'light-on-secondary-container': '#00363B',
+        'light-tertiary': '#512800',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDCC3',
+        'light-on-tertiary-container': '#4D2600',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8F9FC',
+        'light-on-background': '#191C1E',
+        'light-surface': '#F8F9FC',
+        'light-surface-dim': '#D9DADD',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F3F6',
+        'light-surface-container': '#EDEEF0',
+        'light-surface-container-high': '#E7E8EB',
+        'light-surface-container-highest': '#E1E2E5',
+        'light-on-surface': '#191C1E',
+        'light-surface-variant': '#DCE3EA',
+        'light-on-surface-variant': '#41484D',
+        'light-outline': '#71787E',
+        'light-outline-variant': '#C0C7CE',
+        'light-inverse-surface': '#2E3133',
+        'light-inverse-on-surface': '#F0F1F3',
+        'light-inverse-primary': '#97CDEF',
+        'dark-primary': '#97CDEF',
+        'dark-on-primary': '#00344A',
+        'dark-primary-container': '#0B4F6C',
+        'dark-on-primary-container': '#E3F3FF',
+        'dark-secondary': '#6FD6E0',
+        'dark-on-secondary': '#00363B',
+        'dark-secondary-container': '#004F55',
+        'dark-on-secondary-container': '#C8FAFF',
+        'dark-tertiary': '#FFB77D',
+        'dark-on-tertiary': '#4D2600',
+        'dark-tertiary-container': '#723B00',
+        'dark-on-tertiary-container': '#FFDCC3',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#111416',
+        'dark-on-background': '#E1E2E5',
+        'dark-surface': '#111416',
+        'dark-surface-dim': '#111416',
+        'dark-surface-bright': '#37393C',
+        'dark-surface-container-lowest': '#0C0F10',
+        'dark-surface-container-low': '#191C1E',
+        'dark-surface-container': '#1D2022',
+        'dark-surface-container-high': '#282A2C',
+        'dark-surface-container-highest': '#323537',
+        'dark-on-surface': '#E1E2E5',
+        'dark-surface-variant': '#41484D',
+        'dark-on-surface-variant': '#C0C7CE',
+        'dark-outline': '#8A9298',
+        'dark-outline-variant': '#41484D',
+        'dark-inverse-surface': '#E1E2E5',
+        'dark-inverse-on-surface': '#2E3133',
+        'dark-inverse-primary': '#2A6482',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Display"', 'sans-serif'],
+        'headline': ['"Red Hat Display"', 'sans-serif'],
+        'title': ['"Commissioner"', 'sans-serif'],
+        'body': ['"Commissioner"', 'sans-serif'],
+        'label': ['"Commissioner"', 'sans-serif'],
+        'mono': ['"Reddit Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-sm': ['11px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&amp;family=Red+Hat+Display:wght@600;700&amp;family=Reddit+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased">
+  <div class="min-h-screen flex bg-dark-surface">
+
+    <!-- Left Admin Sidebar -->
+    <aside class="w-64 shrink-0 bg-dark-surface-container-lowest border-r border-dark-outline-variant p-gutter-lg hidden lg:flex flex-col justify-between">
+      <div class="flex flex-col gap-gutter-xl">
+        <a href="../landing-dark/LandingMidnight.html" class="flex items-center gap-gutter-sm">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-dark-primary-container text-dark-on-primary-container border border-dark-primary/40">
+            <span class="material-symbols-outlined text-headline-md" aria-hidden="true">radar</span>
+          </span>
+          <div class="flex flex-col">
+            <span class="font-headline text-title-lg text-dark-primary leading-none">KailSpot</span>
+            <span class="font-label text-label-sm text-dark-tertiary">Admin Verifikator</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navigasi Admin" class="flex flex-col gap-gutter-xs">
+          <button type="button" data-nav="all" class="sidebar-nav flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-lg text-left">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">verified_user</span>
+            <span>Antrean Verifikasi</span>
+          </button>
+          <button type="button" data-nav="pending" class="sidebar-nav flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg text-dark-on-surface-variant hover:bg-dark-surface-container hover:text-dark-on-surface font-label text-label-lg text-left">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">schedule</span>
+            <span>Menunggu Review</span>
+          </button>
+          <button type="button" data-nav="verified" class="sidebar-nav flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg text-dark-on-surface-variant hover:bg-dark-surface-container hover:text-dark-on-surface font-label text-label-lg text-left">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">check_circle</span>
+            <span>Spot Terverifikasi</span>
+          </button>
+          <a href="../map-dark/PetaPinMidnight.html" class="flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg text-dark-on-surface-variant hover:bg-dark-surface-container hover:text-dark-on-surface font-label text-label-lg">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">map</span>
+            <span>Lihat Peta Pin</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-gutter-md border-t border-dark-outline-variant flex flex-col gap-gutter-sm">
+        <div class="flex items-center gap-gutter-sm">
+          <span class="w-9 h-9 rounded-full bg-dark-tertiary-container text-dark-on-tertiary-container flex items-center justify-center font-label text-label-md">AD</span>
+          <div class="flex flex-col">
+            <span class="font-label text-label-md text-dark-on-surface">Admin Nusantara</span>
+            <span class="text-body-sm text-dark-on-surface-variant">admin@kailspot.id</span>
+          </div>
+        </div>
+        <a href="../login-dark/LoginMidnight.html" class="inline-flex items-center gap-gutter-xs text-label-md font-label text-dark-error hover:underline">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">logout</span>
+          <span>Keluar</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Admin Workspace -->
+    <div class="flex-1 flex flex-col min-w-0">
+      <!-- Top Bar -->
+      <header class="bg-dark-surface-container-lowest border-b border-dark-outline-variant px-gutter-lg py-gutter-md flex flex-wrap items-center justify-between gap-gutter-md">
+        <div class="flex flex-col">
+          <h1 class="font-headline text-headline-md text-dark-on-surface">Dashboard Verifikasi Spot &amp; Tangkapan</h1>
+          <span class="text-body-sm text-dark-on-surface-variant">Periksa keakuratan koordinat GPS, kondisi air, dan bukti tangkapan sebelum pin tampil sebagai Terverifikasi.</span>
+        </div>
+
+        <div class="relative">
+          <span class="material-symbols-outlined text-title-md text-dark-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true">search</span>
+          <input id="admin-search" type="text" placeholder="Cari spot atau pelapor..." class="pl-10 pr-gutter-md py-gutter-xs rounded-full bg-dark-surface-container border border-dark-outline-variant text-dark-on-surface placeholder-dark-on-surface-variant text-body-md focus:border-dark-primary focus:ring-0">
+        </div>
+      </header>
+
+      <main class="flex-1 p-gutter-lg flex flex-col gap-gutter-lg">
+        <!-- 4 KPI Summary Cards -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter-md">
+          <div class="rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-md flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm text-dark-on-surface-variant">Total Spot Masuk</span>
+            <span id="kpi-total" class="font-mono text-headline-lg text-dark-primary">5</span>
+          </div>
+          <div class="rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-md flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm text-dark-on-surface-variant">Menunggu Verifikasi</span>
+            <span id="kpi-pending" class="font-mono text-headline-lg text-dark-tertiary">2</span>
+          </div>
+          <div class="rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-md flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm text-dark-on-surface-variant">Terverifikasi Aktif</span>
+            <span id="kpi-verified" class="font-mono text-headline-lg text-dark-secondary">3</span>
+          </div>
+          <div class="rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-md flex flex-col gap-gutter-xs">
+            <span class="font-label text-label-sm text-dark-on-surface-variant">Ditolak / Duplikat</span>
+            <span id="kpi-rejected" class="font-mono text-headline-lg text-dark-error">0</span>
+          </div>
+        </section>
+
+        <!-- Split Queue Table + Inspector Panel -->
+        <section class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-start">
+          <!-- Left: Verification Queue -->
+          <div class="xl:col-span-7 rounded-xl bg-dark-surface-container border border-dark-outline-variant overflow-hidden">
+            <div class="p-gutter-md border-b border-dark-outline-variant flex flex-wrap items-center justify-between gap-gutter-sm">
+              <span class="font-title text-title-md text-dark-on-surface">Daftar Laporan Spot</span>
+              <div class="flex items-center gap-gutter-xs">
+                <button type="button" data-filter="all" class="filter-tab px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-sm">Semua</button>
+                <button type="button" data-filter="pending" class="filter-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container-high text-dark-on-surface-variant font-label text-label-sm">Menunggu</button>
+                <button type="button" data-filter="verified" class="filter-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container-high text-dark-on-surface-variant font-label text-label-sm">Terverifikasi</button>
+              </div>
+            </div>
+
+            <div id="queue-list" class="divide-y divide-dark-outline-variant">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Right: Spot Inspector Drawer -->
+          <aside id="inspector-panel" class="xl:col-span-5 rounded-xl bg-dark-surface-container border border-dark-outline-variant p-gutter-lg flex flex-col gap-gutter-md">
+            <!-- Populated by JS -->
+          </aside>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script data-stitch-original-script="e86908796f1e588d===../../images/spot_muara_angke.jpg|||6218ae829db366e0===../../images/catch_kakap_putih.jpg|||50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg|||e86908796f1e588d===../../images/spot_muara_angke.jpg|||6218ae829db366e0===../../images/catch_kakap_putih.jpg|||50c64856ab5fe33c===../../images/spot_sungai_cisadane.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg|||d4945de0145de5fd===../../images/spot_danau_jatiluhur.jpg|||8ff80004009d7b60===../../images/catch_baung_sungai.jpg">
+    const reports = [
+      {
+        id: 4,
+        name: "Pintu Air Bagan Siapi",
+        category: "Laut & Muara",
+        coords: "-6.0914, 106.8422",
+        status: "pending",
+        angler: "Bagas S.",
+        fish: "Kerapu Lumpur",
+        weight: "3,1 kg",
+        bait: "Belanak hidup",
+        water: "Surut Perlahan • Angin 8 knot",
+        time: "35 menit lalu",
+        spotImg: "https://lh3.googleusercontent.com/aida/ALJJyrDaAtz6Id_sNgWiJCdIOGg0ZWCdZGUIzTXRxSoq_mxkhmf8yYGGpB8J3SxZ8KUM9aD4bko_fAGdoSkjVOO1sDZYWcbIb-Tmgp7zeMN-8IGT9x-IqYoO8-na-thaObS98AWLuVyweCVqwHg0jQUZnOIa3xatJtj9S9HrRxa1IFZ1bmJINmsQCotuifUXlrgi34Ihx1yDbwrLd8WYTdFGRYQO7LtrG2U6-Yn57AIdPn_c_YWweKrIqtVhwEk4",
+        catchImg: "https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w"
+      },
+      {
+        id: 5,
+        name: "Tikungan Kali Bekasi",
+        category: "Sungai",
+        coords: "-6.2383, 106.9924",
+        status: "pending",
+        angler: "Yusuf K.",
+        fish: "Patin Sungai",
+        weight: "3,8 kg",
+        bait: "Roti tawar & lumut",
+        water: "Arus Pelan • Teduh",
+        time: "1 jam lalu",
+        spotImg: "https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg",
+        catchImg: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ"
+      },
+      {
+        id: 1,
+        name: "Dermaga Muara Angke",
+        category: "Laut & Muara",
+        coords: "-6.1052, 106.7921",
+        status: "verified",
+        angler: "Rizal P.",
+        fish: "Kakap Putih",
+        weight: "4,2 kg",
+        bait: "Udang putih hidup",
+        water: "Pasang Naik +1,4 m",
+        time: "2 jam lalu",
+        spotImg: "https://lh3.googleusercontent.com/aida/ALJJyrDaAtz6Id_sNgWiJCdIOGg0ZWCdZGUIzTXRxSoq_mxkhmf8yYGGpB8J3SxZ8KUM9aD4bko_fAGdoSkjVOO1sDZYWcbIb-Tmgp7zeMN-8IGT9x-IqYoO8-na-thaObS98AWLuVyweCVqwHg0jQUZnOIa3xatJtj9S9HrRxa1IFZ1bmJINmsQCotuifUXlrgi34Ihx1yDbwrLd8WYTdFGRYQO7LtrG2U6-Yn57AIdPn_c_YWweKrIqtVhwEk4",
+        catchImg: "https://lh3.googleusercontent.com/aida/ALJJyrBtNo5Z5bNsP4LFJI8fKVjfr5cyiO1sUaXQuj41z72G4Lbb2K0lSqGGFgu6S5cFUW98saemXN0N3ZXBpBdPVWIsrrJW2ZpdbJWUV08mUh7k5t-s5uH-kjr-vkK5e1HIOwauZ7ncfT9J96hWQEcWyYxroxjWapW5RH_JT9avbh__b9FCZEbRtHXeEuFtDQ9ROaVP6oKilKxJF5ipqjRe6YTOT-zZpcTHhjU56aPIMt1wXB_o-GqwSiDq2ETu8w"
+      },
+      {
+        id: 2,
+        name: "Lubuk Sungai Cisadane",
+        category: "Sungai",
+        coords: "-6.1784, 106.6312",
+        status: "verified",
+        angler: "Hendra W.",
+        fish: "Ikan Baung",
+        weight: "2,6 kg",
+        bait: "Kucur fermentasi",
+        water: "Arus Sedang • 3,5 m",
+        time: "Hari ini, 06:15",
+        spotImg: "https://lh3.googleusercontent.com/aida/ALJJyrDZvQystVx1Y4vZfqw2FyOSzHwz3z0DNUYiTyYGcdKJRStINHteAQuM6AGhADXCM4qvq1WO2BmkmjPbx1LOPeGl06UxGMlxg-c87rIlsvmDOFnKjH9nEOBR6AiD9gheKCjr5Fm8oDPpLdkATeS8ol6ppdX1Rrj8N_9OGlZ7IZAr5jrFp-AdZx5yqUmsy_tp46Zkv_m8moCZINVXd_qvAmZnl9g-x51yDKgiNmKWzMcVVJmmC_38-xqszGKICn1lYg",
+        catchImg: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ"
+      },
+      {
+        id: 3,
+        name: "Tanjung Waduk Jatiluhur",
+        category: "Danau & Waduk",
+        coords: "-6.5256, 107.3861",
+        status: "verified",
+        angler: "Dimas A.",
+        fish: "Hampala",
+        weight: "1,9 kg",
+        bait: "Soft lure",
+        water: "Tenang • Jernih",
+        time: "Kemarin, 16:40",
+        spotImg: "https://lh3.googleusercontent.com/aida/ALJJyrAGZ0qW14ZkdN1xaC7CVV0jVY07_vA_3Mz1oCHjiHcHEyIHeQ1aLfwovMc-MgUkVHLEXxp2SZ_WZG8dVPmfhjTuQC9TS_WBIRFmX5hBmEST5Mv1kWuQbRTde0wkgIT3Rq4wrAvqXHqrSnlLP3pgzsUvDYMr7x48QOIt3jWRtQaWb371wGDdPO7Qvm9RWTJscM6LfPKGmFiAg5PQ0vBksclCvkSXvxt77EXEhMrfA2fSkPDaz4OB2rC3NU9affpcyg",
+        catchImg: "https://lh3.googleusercontent.com/aida/ALJJyrCFPe40btFUBGzW9PqGOPGTTK3pY09PXT9H6SuxGoiIenmXXkT9NjWYN9bZnTP5xk6F7L04rIqo24Gpt-7iWAh5U3y_hg21Ly6ptT6EcB3i3cI9iTCr4haxm0wwZeyPHRduiW921fjRz59SL_tDXC5UGY9GPpSZdPGrQ182jShjtaBfjsYxOo1ToqI_8s9iE0fH-dmi8NtrPajfT7MQPO_jfrFK3AEqyjN423HSlFrSnooSq2Gsl8MxpRt4oQ"
+      }
+    ];
+
+    let selectedId = 4;
+    let currentFilter = "all";
+    let searchQuery = "";
+    let rejectedCount = 0;
+
+    function updateKPIs() {
+      document.getElementById("kpi-total").textContent = reports.length;
+      document.getElementById("kpi-pending").textContent = reports.filter(r => r.status === "pending").length;
+      document.getElementById("kpi-verified").textContent = reports.filter(r => r.status === "verified").length;
+      document.getElementById("kpi-rejected").textContent = rejectedCount;
+    }
+
+    function renderQueue() {
+      const list = document.getElementById("queue-list");
+      const filtered = reports.filter(r => {
+        const matchesFilter = currentFilter === "all" ? true : r.status === currentFilter;
+        const q = searchQuery.toLowerCase();
+        const matchesSearch = !q || r.name.toLowerCase().includes(q) || r.angler.toLowerCase().includes(q) || r.fish.toLowerCase().includes(q);
+        return matchesFilter && matchesSearch;
+      });
+
+      list.innerHTML = filtered.map(r => {
+        const isSelected = r.id === selectedId;
+        const badge = r.status === "verified"
+          ? `<span class="px-gutter-sm py-0.5 rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi</span>`
+          : `<span class="px-gutter-sm py-0.5 rounded-full bg-dark-tertiary-container text-dark-on-tertiary-container font-label text-label-sm">Menunggu</span>`;
+
+        return `
+          <div onclick="selectReport(${r.id})" class="p-gutter-md flex items-center justify-between gap-gutter-md cursor-pointer ${isSelected ? "bg-dark-surface-container-high" : "hover:bg-dark-surface-container-low"}">
+            <div class="flex items-center gap-gutter-md min-w-0">
+              <img src="${r.spotImg}" alt="${r.name}" class="w-12 h-12 rounded-lg object-cover border border-dark-outline-variant shrink-0" />
+              <div class="min-w-0">
+                <div class="flex items-center gap-gutter-sm">
+                  <span class="font-title text-title-md text-dark-on-surface truncate">${r.name}</span>
+                  ${badge}
+                </div>
+                <span class="block text-body-sm text-dark-on-surface-variant">${r.angler} • ${r.fish} (${r.weight}) • ${r.time}</span>
+              </div>
+            </div>
+            <span class="font-mono text-mono-sm text-dark-primary hidden sm:inline shrink-0">${r.coords}</span>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderInspector() {
+      const panel = document.getElementById("inspector-panel");
+      const r = reports.find(item => item.id === selectedId) || reports[0];
+      if (!r) {
+        panel.innerHTML = `<span class="text-body-md text-dark-on-surface-variant">Tidak ada laporan dipilih.</span>`;
+        return;
+      }
+
+      const badge = r.status === "verified"
+        ? `<span class="px-gutter-md py-gutter-xs rounded-full bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-sm">Terverifikasi</span>`
+        : `<span class="px-gutter-md py-gutter-xs rounded-full bg-dark-tertiary-container text-dark-on-tertiary-container font-label text-label-sm">Menunggu Verifikasi</span>`;
+
+      panel.innerHTML = `
+        <div class="flex items-start justify-between gap-gutter-sm">
+          <div>
+            <span class="font-label text-label-sm text-dark-primary uppercase">${r.category}</span>
+            <h2 class="font-headline text-headline-md text-dark-on-surface">${r.name}</h2>
+            <span class="font-mono text-mono-sm text-dark-on-surface-variant">${r.coords}</span>
+          </div>
+          ${badge}
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-sm">
+          <img src="${r.spotImg}" alt="Foto Lokasi" class="w-full h-32 rounded-lg object-cover border border-dark-outline-variant" />
+          <img src="${r.catchImg}" alt="Foto Tangkapan" class="w-full h-32 rounded-lg object-cover border border-dark-outline-variant" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-gutter-sm">
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Pelapor</span>
+            <span class="text-body-sm text-dark-on-surface">${r.angler} (${r.time})</span>
+          </div>
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Tangkapan</span>
+            <span class="text-body-sm text-dark-secondary">${r.fish} • ${r.weight}</span>
+          </div>
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Kondisi Air</span>
+            <span class="text-body-sm text-dark-on-surface">${r.water}</span>
+          </div>
+          <div class="p-gutter-sm rounded-lg bg-dark-surface-container-low border border-dark-outline-variant">
+            <span class="block font-label text-label-sm text-dark-on-surface-variant">Umpan</span>
+            <span class="text-body-sm text-dark-on-surface">${r.bait}</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-gutter-sm pt-gutter-sm border-t border-dark-outline-variant">
+          ${r.status === "pending" ? `
+            <button type="button" onclick="approveReport(${r.id})" class="flex-1 py-gutter-sm px-gutter-md rounded-full bg-dark-secondary text-dark-on-secondary font-label text-label-lg">Verifikasi Spot</button>
+            <button type="button" onclick="rejectReport(${r.id})" class="py-gutter-sm px-gutter-lg rounded-full bg-dark-error-container text-dark-on-error-container font-label text-label-lg">Tolak</button>
+          ` : `
+            <button type="button" onclick="revokeReport(${r.id})" class="flex-1 py-gutter-sm px-gutter-md rounded-full bg-dark-surface-container-high text-dark-on-surface border border-dark-outline-variant font-label text-label-lg">Kembalikan ke Antrean</button>
+          `}
+        </div>
+      `;
+    }
+
+    function selectReport(id) {
+      selectedId = id;
+      renderQueue();
+      renderInspector();
+    }
+
+    function approveReport(id) {
+      const r = reports.find(item => item.id === id);
+      if (r) {
+        r.status = "verified";
+        updateKPIs();
+        renderQueue();
+        renderInspector();
+      }
+    }
+
+    function revokeReport(id) {
+      const r = reports.find(item => item.id === id);
+      if (r) {
+        r.status = "pending";
+        updateKPIs();
+        renderQueue();
+        renderInspector();
+      }
+    }
+
+    function rejectReport(id) {
+      const idx = reports.findIndex(item => item.id === id);
+      if (idx !== -1) {
+        reports.splice(idx, 1);
+        rejectedCount++;
+        selectedId = reports[0] ? reports[0].id : null;
+        updateKPIs();
+        renderQueue();
+        renderInspector();
+      }
+    }
+
+    document.querySelectorAll(".filter-tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentFilter = btn.dataset.filter;
+        document.querySelectorAll(".filter-tab").forEach(b => {
+          b.className = "filter-tab px-gutter-md py-gutter-xs rounded-full bg-dark-surface-container-high text-dark-on-surface-variant font-label text-label-sm";
+        });
+        btn.className = "filter-tab px-gutter-md py-gutter-xs rounded-full bg-dark-primary text-dark-on-primary font-label text-label-sm";
+        renderQueue();
+      });
+    });
+
+    document.querySelectorAll(".sidebar-nav").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentFilter = btn.dataset.nav;
+        document.querySelectorAll(".sidebar-nav").forEach(b => {
+          b.className = "sidebar-nav flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg text-dark-on-surface-variant hover:bg-dark-surface-container hover:text-dark-on-surface font-label text-label-lg text-left";
+        });
+        btn.className = "sidebar-nav flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-lg bg-dark-secondary-container text-dark-on-secondary-container font-label text-label-lg text-left";
+        renderQueue();
+      });
+    });
+
+    document.getElementById("admin-search").addEventListener("input", e => {
+      searchQuery = e.target.value;
+      renderQueue();
+    });
+
+    updateKPIs();
+    renderQueue();
+    renderInspector();
+  </script>
+
+
+</body></html>

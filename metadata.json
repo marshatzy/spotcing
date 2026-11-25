@@ -1,0 +1,6 @@
+{
+  "name": "KailSpot — Midnight Sonar",
+  "description": "Peta interaktif spot mancing dan laporan tangkapan komunitas pemancing Nusantara dengan tampilan Midnight Sonar dan panel verifikasi admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
